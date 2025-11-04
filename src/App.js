@@ -61,7 +61,7 @@ function AppContent() {
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename="/">
+      <Router basename="/takniki_hindi_sangoshthi_2026">
         <AppContent />
       </Router>
     </ThemeProvider>
