@@ -12,6 +12,7 @@ import {
 import backgroundimg from "../Assets/images/backgroundimg.png";
 import indorelogo from "../Assets/images/indorelogo.png";
 import jodhpurlogo from "../Assets/images/jodhpurlogo.png";
+import Hindi_confrenece_video from '../Assets/images/Hindi_confrenece_video.gif'
 
 const Home = () => {
   const theme = useTheme();
@@ -22,13 +23,27 @@ const Home = () => {
    
    <Box sx={{background:'#fff'}}>
       <Box
-        sx={{
-          width: "100%",
-          textAlign: "center",
-          backgroundColor: "black",
-          color: "white",
-          py: { xs: 10, md: 20 },
-        }}/>
+  sx={{
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#000", // optional fallback
+    py: 5,
+  }}
+>
+  <img
+    src={Hindi_confrenece_video}
+    alt="Hindi Conference Video"
+    style={{
+      width: "100%",
+      maxWidth: "1500px",
+      borderRadius: "12px",
+      objectFit: "cover",
+    }}
+  />
+</Box>
+
 
       <Box
         sx={{
@@ -54,14 +69,14 @@ const Home = () => {
           </Typography>
          <Box sx={{display:'flex', justifyContent:'space-evenly'}}>
   
-              <Typography variant="body1" sx={{ textAlign: "justify", color: "#000", pr: 5 }}>
+              <Typography variant="h6" sx={{ textAlign: "justify", color: "#000", pr: 5 }}>
                 भारतीय प्रौद्योगिकी संस्थान इंदौर द्वारा गत वर्ष की भांति इस वर्ष भी तकनीकी
                 हिंदी संगोष्ठी का आयोजन 02 जनवरी 2026 को किया जा रहा है। संगोष्ठी का मुख्य उद्देश्य
                 वैज्ञानिक एवं प्रौद्योगिकी संस्थानों में हो रहे तकनीकी नवाचारों को हिंदी भाषा में
                 सरल एवं रुचिकर पाठ्य के माध्यम से छात्रों एवं शोधार्थियों के लिए उपलब्ध कराया जाना है।
               </Typography>
   
-              <Typography variant="body1" sx={{ textAlign: "justify", color: "#000", pl: 5 }}>
+              <Typography variant="h6" sx={{ textAlign: "justify", color: "#000", pl: 5 }}>
                 जिससे तकनीकी क्षेत्र में हिंदी भाषा के प्रयोग का दायरा विस्तृत किया जा सके।
                 इस वर्ष की तकनीकी हिंदी संगोष्ठी का संयुक्त आयोजन भारतीय प्रौद्योगिकी संस्थान
                 इंदौर और भारतीय प्रौद्योगिकी संस्थान जोधपुर द्वारा किया जा रहा है।
@@ -101,28 +116,43 @@ const Home = () => {
           }}
         >
           <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 4,
-              flexWrap: "wrap",
-            }}
-          >
-            <img
-              src={indorelogo}
-              alt="IIT Indore Logo"
-              style={{ height: "9rem", objectFit: "contain" }}
-            />
-            <Typography color="#fff" sx={{ fontWeight: "bold", fontSize:"2.25rem" }}>
-              एवं
-            </Typography>
-            <img
-              src={jodhpurlogo}
-              alt="IIT Jodhpur Logo"
-              style={{ height: "9rem", objectFit: "contain" }}
-            />
-          </Box>
+  sx={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: { xs: 2, md: 4 },
+    flexDirection: { xs: "column", md: "row" }, // ✅ vertical on mobile, horizontal on desktop
+    textAlign: "center",
+  }}
+>
+  <img
+    src={indorelogo}
+    alt="IIT Indore Logo"
+    style={{
+      height: "9rem",
+      objectFit: "contain",
+    }}
+  />
+
+  <Typography
+    color="#fff"
+    sx={{
+      fontWeight: "bold",
+      fontSize: { xs: "1.75rem", md: "2.25rem" }, // ✅ adjusts size for mobile
+    }}
+  >
+    एवं
+  </Typography>
+
+  <img
+    src={jodhpurlogo}
+    alt="IIT Jodhpur Logo"
+    style={{
+      height: "9rem",
+      objectFit: "contain",
+    }}
+  />
+</Box>
 
           <Typography
             color="#fff"
@@ -162,7 +192,7 @@ const Home = () => {
             color: "#fff",
             backgroundColor: "#522B29",
             width: { xs: "70%", md: "25%" },
-            height: "10rem",
+            height: { xs: "5rem", md: "10rem" },
             fontSize: { xs: "1,5rem", md: "2.5rem" }, // ✅ readable
             fontWeight: "bolder",
             borderRadius: "80px",

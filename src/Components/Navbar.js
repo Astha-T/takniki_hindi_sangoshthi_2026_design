@@ -23,6 +23,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
+    { label: "मुख्य पृष्ठ", path: "/" },
     { label: "आमंत्रित वक्ता", path: "/speakers" },
     { label: "पंजीकरण", path: "/register" },
     { label: "आवेदन आमंत्रण", path: "/invitation" },
@@ -86,7 +87,7 @@ const Navbar = () => {
                   color="inherit"
                   sx={{
                     fontSize: "1.375rem",
-                    color: "#fff",
+                    color: location.pathname === item.path ? "#5F695C" : "#fff",
                     fontWeight:
                       location.pathname === item.path ? "bold" : "normal",
                   }}

@@ -7,7 +7,7 @@ const Registration = () => {
   const theme = useTheme();
   return (
     <ThemeProvider theme={theme}>
-        <Box sx={{mx: 10}}>
+        <Box sx={{mx: {xs: 1, md:10}}}>
             <Typography variant='h3' color="#5F695C" sx={{mt: 10, fontWeight:'bold'}}>पंजीकरण</Typography>
 
 
@@ -36,21 +36,23 @@ const Registration = () => {
     },
   ].map((item, i) => (
     <Box
-      key={i}
-      sx={{
-        width: "100%",
-        my: 2,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        position: "relative",
-      }}
-    >
+  key={i}
+  sx={{
+    width: "100%",
+    my: 2,
+    display: "flex", // ✅ keep flex
+    flexDirection: { xs: "column", md: "row" }, // stack on small screens
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
+  }}
+>
+
       {/* Creme Box */}
       <Box
         sx={{
           backgroundColor: "#F9DAD0",
-          width: "22%",
+          width: "22rem",
           py: 2,
           textAlign: "center",
           fontWeight: "bolder",
@@ -66,7 +68,7 @@ const Registration = () => {
       <Box
         sx={{
           backgroundColor: "#522B29",
-          width: "14%",
+          width: "14rem",
           py: 2,
           fontSize: "36px",
           color: "#fff",
@@ -83,7 +85,7 @@ const Registration = () => {
     </Box>
   ))}
 </Box>
- <Box sx={{mx:10}}>
+ <Box sx={{mx: {xs: 1, md:10}}}>
        < Typography
               variant="h5"
               sx={{
@@ -101,7 +103,7 @@ const Registration = () => {
               sx={{
                 textAlign: "left",
                 my: 4,
-                lineHeight:1.5
+                lineHeight:1.25
               }}
             >तकनीकी हिन्दी संगोष्ठी 2024 से संबंधित मुख्य तिथियां-
 <ul>
@@ -118,34 +120,58 @@ const Registration = () => {
       <Grid item xs={12} md={6}>
         <Typography variant='h5' sx={{color:'white', lineHeight:'1.75', px: 5, py: 2}}> संगोष्ठी में भाग लेने के इच्छुक प्रतिभागी कृपया निम्नदर्शित पंजीकरण फ़ॉर्म के <br/>माध्यम से आलेख अपलोड की समय सीमा के अंतर्गत अपना आलेख भेजें </Typography>
 </Grid>
-<Grid item xs={12} md={6} >
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', alignContent:'center', my: 5, mx: 25}}>
-<Button
-    variant="contained"
-    endIcon={<ArrowForwardIcon sx={{ borderRadius: '50%', color: 'white', p: 1, ml: 2, background: '#522B29' }} />}
+<Grid item xs={12} md={6}>
+  <Box
     sx={{
-      color: "#522B29",
-      backgroundColor: "#F9DAD0",
-      width: '22.5rem',
-      height: "3.125rem",
-      fontSize: "2rem",
-      fontWeight: "bolder",
-      borderRadius: "80px",
-      p: 5,
-      textAlign: 'center'
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      my: { xs: 3, md: 5 },
+      mx: { xs: 0, md: 25 },
     }}
   >
-    पंजीकरण फ़ॉर्म
-  </Button>
-    </Box>
-  
+    <Button
+      variant="contained"
+      endIcon={
+        <ArrowForwardIcon
+  sx={{
+    width: { xs: 24, sm: 32, md: 40 },
+    height: { xs: 24, sm: 32, md: 40 },
+    borderRadius: '50%',
+    color: 'white',
+    ml: 1.5,
+    background: '#522B29',
+    p: 1,
+  }}
+/>
+
+      }
+      sx={{
+        color: '#522B29',
+        backgroundColor: '#F9DAD0',
+        width: { xs: '80%', sm: '60%', md: '22.5rem' },
+        height: { xs: '3rem', md: '3.125rem' },
+        fontSize: { xs: '1.25rem', sm: '1.75rem', md: '2rem' },
+        fontWeight: 'bolder',
+        borderRadius: '80px',
+        p: { xs: 2, sm: 3, md: 4 },
+        textAlign: 'center',
+        '&:hover': {
+          backgroundColor: '#f0c5b8',
+        },
+      }}
+    >
+      पंजीकरण फ़ॉर्म
+    </Button>
+  </Box>
 </Grid>
+
 
 </Grid>
  
 </Box>
 </Box>
-<Box sx={{mx:10, pb: 3}}>
+<Box sx={{mx: {xs: 1, md:10}, pb: 3}}>
        < Typography
               variant="h5"
               sx={{
@@ -162,7 +188,7 @@ const Registration = () => {
               sx={{
                 textAlign: "left",
                 my: 4,
-                lineHeight:1.5,
+                lineHeight:1.25,
                 fontSize:'1.5rem'
               }}
             >छात्र / प्रशिक्षु - <b>रू. 250</b><br/>
@@ -172,7 +198,7 @@ const Registration = () => {
 </Typography>
     </Box>
 
-<Box sx={{mx:10}}>
+<Box sx={{mx: {xs: 1, md:10}}}>
        < Typography
               variant="h5"
               sx={{
@@ -200,8 +226,8 @@ const Registration = () => {
               sx={{
                 textAlign: "left",
                 my: 4,
-                width:'85%',
-                lineHeight:1.5,
+                width:'86%',
+                lineHeight:1.25,
                 fontSize:'1.5rem'
               }}
             ><ol>
@@ -227,7 +253,7 @@ const Registration = () => {
                 textAlign: "left",
                 my: 4,
                 width:'85%',
-                lineHeight:1.5,
+                lineHeight:1.25,
                 fontSize:'1.5rem'
               }}
             ><ol>
@@ -241,11 +267,11 @@ const Registration = () => {
 <li>
   प्रतिभागी निम्नलिखित खाते में भुगतान कर सकता है:
   <Box sx={{ display: "flex", flexDirection: "column", mt: 1, ml: 2 }}>
-    <Typography sx={{fontSize:'1.5rem'}}><b>खाता संख्या -</b> 38448045180</Typography>
-    <Typography sx={{fontSize:'1.5rem'}}><b>नाम -</b> IIT Jodhpur Hostel Receipts and Fine Accounts</Typography>
-    <Typography sx={{fontSize:'1.5rem'}}><b>बैंक -</b> SBI IIT Jodhpur</Typography>
-    <Typography sx={{fontSize:'1.5rem'}}><b>IFSC Code -</b> SBIN0014892</Typography>
-    <Typography sx={{fontSize:'1.5rem'}}><b>UPI ID -</b> 38448045180@sbi</Typography>
+    <Typography sx={{fontSize:'1.5rem', lineHeight:1.25}}><b>खाता संख्या -</b> 38448045180</Typography>
+    <Typography sx={{fontSize:'1.5rem', lineHeight:1.25}}><b>नाम -</b> IIT Jodhpur Hostel Receipts and Fine Accounts</Typography>
+    <Typography sx={{fontSize:'1.5rem', lineHeight:1.25}}><b>बैंक -</b> SBI IIT Jodhpur</Typography>
+    <Typography sx={{fontSize:'1.5rem', lineHeight:1.25}}><b>IFSC Code -</b> SBIN0014892</Typography>
+    <Typography sx={{fontSize:'1.5rem', lineHeight:1.25}}><b>UPI ID -</b> 38448045180@sbi</Typography>
   </Box>
 </li>
 

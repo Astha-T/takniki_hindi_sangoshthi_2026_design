@@ -11,7 +11,7 @@ const Invitation = () => {
       <Box>
 
         {/* Header Section */}
-        <Box sx={{ mx: 10 }}>
+        <Box sx={{ mx: {xs: 1, md:10} }}>
           <Typography variant="h3" color="#5F695C" sx={{ mt: 10, fontWeight: 'bold' }}>
             आलेख आमंत्रण
           </Typography>
@@ -72,7 +72,7 @@ const Invitation = () => {
         </Box>
 
         {/* Section 1 */}
-        <Box sx={{ mx: 10 }}>
+        <Box sx={{ mx: {xs: 1, md:10} }}>
           <Typography
             variant="h5"
             sx={{
@@ -86,7 +86,7 @@ const Invitation = () => {
           </Typography>
 
           <Typography
-            sx={{ textAlign: 'left', my: 4, lineHeight: 1.5, fontSize:'1.5rem' }}
+            sx={{ textAlign: 'left', my: 4, lineHeight: 1.25, fontSize:'1.5rem' }}
           >
             तकनीकी हिन्दी संगोष्ठी 2024 से संबंधित मुख्य तिथियां-
             <ol>
@@ -98,7 +98,7 @@ const Invitation = () => {
         </Box>
 
         {/* Section 2 */}
-        <Box sx={{ mx: 10, pb: 3 }}>
+        <Box sx={{ mx: {xs: 1, md:10}, pb: 3 }}>
           <Typography
             variant="h5"
             sx={{
@@ -112,7 +112,7 @@ const Invitation = () => {
           </Typography>
 
           <Typography
-            sx={{ textAlign: 'left', mt: 4, lineHeight: 2, fontSize:"1.5rem",  width:'85%' }}
+            sx={{ textAlign: 'left', mt: 4, lineHeight: 1.25, fontSize:"1.5rem",  width:'85%' }}
           >
             <ol>
               <li>यूनिकोड फोंटः मंगल / Mangal, single line spacing, मार्जिन / margin 1" (2.54 सेमी/ cm) प्रत्येक तरफ / all side, पेज A4 size</li>
@@ -135,7 +135,7 @@ const Invitation = () => {
 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <Divider sx={{ my: 3, borderColor: '#F9DAD0', borderWidth: 2, width: '90%', mx: 'auto' }} />
         </Box>
-        <Box sx={{ mx: 10 }}>
+        <Box sx={{ mx: {xs: 1, md:10} }}>
           <Typography
             variant="h5"
             sx={{
@@ -168,14 +168,14 @@ const Invitation = () => {
           >" विकसित भारत की दिशा में विज्ञान और प्रौद्योगिकी का योगदान " </Typography>
           </Box>
           <Box sx={{ my: 4}}>
-            <Typography  sx={{fontWeight:'bolder', lineHeight:2, fontSize:"1.5rem"}}>
+            <Typography  sx={{fontWeight:'bolder', lineHeight:1.5, fontSize:"1.5rem"}}>
                 प्रतिभागी अपने लेख वैज्ञानिक और तकनीकी विषय क्षेत्रों में से किसी एक के अंतर्गत भेज सकते हैं।<br/>
 विषय क्षेत्रों के साथ कुछ उदाहरण भी दिए गए हैं जहाँ लेख प्रस्तुत किए जा सकते हैं। <br/>
 पिछले वर्ष सेमिनार के कुछ तकनीकी और लोकप्रिय विज्ञान आलेख आपके संदर्भ के लिए वेब पेज में नीचे दिखाए गए हैं - 
             </Typography>
 
-          <Typography sx={{lineHeight:2, mt: 2, fontSize:"1.5rem"}}></Typography>  
-          <ol style={{fontSize:"1.5rem"}}>
+          <Typography sx={{lineHeight:1.25, mt: 2, fontSize:"1.5rem"}}></Typography>  
+          <ol style={{lineHeight:1.25,fontSize:"1.5rem"}}>
                      <li>अंतरिक्ष विज्ञान एवं प्रौद्योगिकी - उदाहरणत: तरल प्रणोदन इंजन ( Liquid Propulsion Engine Technology) etc.</li>
 <li>रोबोटिक्स एवं गतिशीलता प्रणाली - उदाहरणत: Dynamic Control, UAV Flight etc.</li>
 <li>क्वांटम प्रौद्योगिकी - उदाहरणत: Quantum Key Distribution, Quantum information etc.</li>
@@ -194,7 +194,7 @@ const Invitation = () => {
 <li>शैक्षणिक सत्र</li>
             </ol>
 
-<ul style={{fontSize:"1.5rem"}}>
+<ul style={{lineHeight:1.25,fontSize:"1.5rem"}}>
     <li>उपरोक्त सभी विषयगत क्षेत्रों पर प्रचलित / लोकप्रिय विज्ञान आलेख  </li>
     <ol>
         <li>राजभाषा सत्र - </li>
@@ -210,7 +210,7 @@ const Invitation = () => {
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <Divider sx={{ my: 3, borderColor: '#F9DAD0', borderWidth: 2, width: '90%', mx: 'auto' }} />
         </Box>
-         <Box sx={{ mx:10, display:'flex', justifyContent:'center', my: 3}}>
+         <Box sx={{ mx: {xs: 1, md:10}, display:'flex', justifyContent:'center', my: 3}}>
         <Grid container spacing={5}>
             <Grid item xs={12} md={6} >
                 <Box sx={{ backgroundColor:"#8DAA91", borderRadius:'30px' , p:3 }}>
@@ -227,34 +227,40 @@ const Invitation = () => {
           }}
         >
           <Button
-            variant="contained"
-            endIcon={
-              <ArrowForwardIcon
-                sx={{
-                  borderRadius: '50%',
-                  color: '#522B29',
-                  p: 1,
-                  ml: 2,
-                  background: '#F9DAD0',
-                }}
-              />
-            }
-            sx={{
-              color: '#F9DAD0',
-              backgroundColor: '#522B29',
-              height: '3.125rem',
-              width:"8.5rem",
-              fontSize: '1.5rem',
-              fontWeight: 'bolder',
-              borderRadius: '80px',
-              px: 5,
-              py: 3,
-              mt: 3,
-              textAlign: 'center',
-            }}
-          >
-            देखें 
-          </Button>
+  variant="contained"
+  endIcon={
+    <ArrowForwardIcon
+      sx={{
+        borderRadius: "50%",
+        color: "#522B29",     // light icon color
+        background: "#F9DAD0", // subtle green background to contrast
+        p: 1,
+        ml: 2,
+        height: "2.5rem",
+        width: "2.5rem",
+      }}
+    />
+  }
+  sx={{
+    color: "#F9DAD0",
+    backgroundColor: "#522B29",
+    height: "3.5rem",
+    width: "10rem",
+    fontSize: "1.5rem",
+    fontWeight: "bolder",
+    borderRadius: "80px",
+    px: 4,
+    py: 2,
+    mt: 3,
+    textAlign: "center",
+    "&:hover": {
+      backgroundColor: "#3d1f1d",
+    },
+  }}
+>
+  देखें
+</Button>
+
         </Box>
                    
                 </Box>
@@ -274,34 +280,40 @@ const Invitation = () => {
           }}
         >
           <Button
-            variant="contained"
-            endIcon={
-              <ArrowForwardIcon
-                sx={{
-                  borderRadius: '50%',
-                  color: '#522B29',
-                  p: 1,
-                  ml: 2,
-                  background: '#F9DAD0',
-                }}
-              />
-            }
-            sx={{
-              color: '#F9DAD0',
-              backgroundColor: '#522B29',
-              height: '3.125rem',
-              width:"8.5rem",
-              fontSize: '1.5rem',
-              fontWeight: 'bolder',
-              borderRadius: '80px',
-              px: 5,
-              py: 3,
-              mt: 8,
-              textAlign: 'center',
-            }}
-          >
-            देखें 
-          </Button>
+  variant="contained"
+  endIcon={
+    <ArrowForwardIcon
+      sx={{
+        borderRadius: "50%",
+        color: "#522B29",     // light icon color
+        background: "#F9DAD0", // subtle green background to contrast
+        p: 1,
+        ml: 2,
+        height: "2.5rem",
+        width: "2.5rem",
+      }}
+    />
+  }
+  sx={{
+    color: "#F9DAD0",
+    backgroundColor: "#522B29",
+    height: "3.5rem",
+    width: "10rem",
+    fontSize: "1.5rem",
+    fontWeight: "bolder",
+    borderRadius: "80px",
+    px: 4,
+    py: 2,
+    mt: 8.5,
+    textAlign: "center",
+    "&:hover": {
+      backgroundColor: "#3d1f1d",
+    },
+  }}
+>
+  देखें
+</Button>
+
         </Box>
                    
                 </Box>
@@ -312,7 +324,7 @@ const Invitation = () => {
           <Divider sx={{ my: 3, borderColor: '#F9DAD0', borderWidth: 2, width: '90%', mx: 'auto' }} />
         </Box>
 {/* Row with left text and right-aligned stacked buttons */}
-<Box sx={{ mx: 10, display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+<Box sx={{ mx: {xs: 1, md:10}, display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>
   {/* Left text */}
   <Typography sx={{ fontWeight: 'bolder', textAlign: 'left', fontSize:"2.25rem" }}>
     आलेख रचयिताओं से अनुरोध है कि वे अपने आलेख दिए गए प्रारूप <br />में ही जमा करें :
@@ -357,7 +369,7 @@ const Invitation = () => {
 
 </Box>
 
-<Box sx={{ mx: 10, background: '#F9DAD0', mt: 5, pb: 3, mb: 0 }}>
+<Box sx={{ mx: {xs: 1, md:10}, background: '#F9DAD0', mt: 5, pb: 3, mb: 0 }}>
   <Box sx={{ pt: 3, px: 15 }}>
     <Typography  sx={{ fontWeight: 'bolder' , fontSize:"2rem", pt: 2}}>नोट</Typography>
     <Divider

@@ -18,7 +18,7 @@ const Publication = () => {
     <ThemeProvider theme={theme}>
       <Box>
         {/* Header Section */}
-        <Box sx={{ mx: 10 }}>
+        <Box sx={{ mx: {xs: 1, md:10} }}>
           <Typography variant="h3" color="#5F695C" sx={{ mt: 10, fontWeight: 'bold' }}>
             हिंदी प्रकोष्ठ
           </Typography>
@@ -29,7 +29,7 @@ const Publication = () => {
         </Box>
 
         {/* Table Section */}
-        <Box sx={{ mx: 10, my: 5 }}>
+        <Box sx={{ mx: {xs: 1, md:10}, my: 5 }}>
           <Typography
             variant="h5"
             sx={{
@@ -46,7 +46,7 @@ const Publication = () => {
         </Box>
 
         {/* Rules Section */}
-        <Box sx={{ mx: 10, my: 2 }}>
+        <Box sx={{ mx: {xs: 1, md:10}, my: 2 }}>
           <Typography
             variant="h5"
             sx={{
@@ -61,57 +61,61 @@ const Publication = () => {
         </Box>
 
         {/* Button Grid Section */}
-        <Box sx={{ backgroundColor: '#F9DAD0', py: 4, display:'flex', justifyContent:'space-around' }}>
-          <Grid container spacing={12}>
-            {buttonTitles.map((title, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
-                <Box
-                  sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                  }}
-                >
-
-                  <Button
-                    variant="contained"
-                    endIcon={
-                      <ArrowForwardIcon
-                      siz
-                        sx={{
-                          borderRadius: '50%',
-                          color: '#522B29',
-                          p: 1,
-                          ml: 2,
-                          fontSize:'22px',
-                          background: '#fff',
-                        }}
-                      />
-                    }
-                    sx={{
-                      color: '#fff',
-                      backgroundColor: '#522B29',
-                      fontSize: '32px',
-                      fontWeight: 'bolder',
-                      borderRadius: '80px',
-                      px: 5,
-                      py: 2,
-                      textAlign: 'center',
-                      mt: 1,
-                    }}
-                  >
-                   {title}
-                  </Button>
-                </Box>
-              </Grid>
-            ))}
-          </Grid>
+<Box sx={{ backgroundColor: '#F9DAD0', py: 4, display: 'flex', justifyContent: 'space-around' }}>
+  <Grid container spacing={12}>
+    {buttonTitles.map((title, index) => (
+      <Grid item xs={12} sm={6} md={3} key={index}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+          }}
+        >
+          <Button
+            variant="contained"
+            endIcon={
+              <ArrowForwardIcon
+                sx={{
+                  borderRadius: '50%',
+                  color: '#522B29',
+                  backgroundColor: '#F9DAD0', // ✅ More contrast
+                  p: 1,
+                  ml: 1.5,
+                  fontSize: '2rem', // ✅ Bigger icon
+                  height: '2.8rem',
+                  width: '2.8rem',
+                }}
+              />
+            }
+            sx={{
+              color: '#F9DAD0', // ✅ text color matches background contrast
+              backgroundColor: '#522B29',
+              fontSize: '1.75rem',
+              fontWeight: 'bold',
+              borderRadius: '80px',
+              px: 4,
+              py: 2,
+              mt: 1,
+              textAlign: 'center',
+              '&:hover': {
+                backgroundColor: '#3b1c1b',
+              },
+            }}
+          >
+            {title}
+          </Button>
         </Box>
+      </Grid>
+    ))}
+  </Grid>
+</Box>
+
 
         {/* Word Collection Section */}
-        <Box sx={{ mx: 10, mt: 7, my: 10 }}>
+        <Box sx={{ mx: {xs: 1, md:10}, mt: 7, my: 10 }}>
           <Typography
             variant="h5"
             sx={{

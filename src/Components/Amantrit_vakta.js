@@ -9,7 +9,7 @@ const Amantrit_vakta = () => {
   const theme = useTheme();
   return (
     <ThemeProvider theme={theme}>
-        <Box sx={{mx: 10}}>
+        <Box sx={{mx: {xs: 1, md:10}}}>
             <Typography variant='h3' color="#5F695C" sx={{mt: 10, fontWeight:'bold'}}>आमंत्रित वक्ता</Typography>
 {/* <Box
   sx={{
