@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/takniki_hindi_sangoshthi_2026/static/css/main.5e135e08.css",
-    "main.js": "/takniki_hindi_sangoshthi_2026/static/js/main.4b675ed7.js",
-    "static/js/453.d7446e4a.chunk.js": "/takniki_hindi_sangoshthi_2026/static/js/453.d7446e4a.chunk.js",
-    "static/media/backgroundimg.png": "/takniki_hindi_sangoshthi_2026/static/media/backgroundimg.289c06a79df82d9fe976.png",
-    "static/media/backgroundImgAbout.png": "/takniki_hindi_sangoshthi_2026/static/media/backgroundImgAbout.4ef638f996e39f843a1c.png",
-    "static/media/sarafa.png": "/takniki_hindi_sangoshthi_2026/static/media/sarafa.50a9807b814b076f632b.png",
-    "static/media/kanchmandir.png": "/takniki_hindi_sangoshthi_2026/static/media/kanchmandir.994cbef9ddc5a9e0361b.png",
-    "static/media/gulawat.png": "/takniki_hindi_sangoshthi_2026/static/media/gulawat.14c1ac370d1bccc85aed.png",
-    "static/media/Rajwada.png": "/takniki_hindi_sangoshthi_2026/static/media/Rajwada.e6154076945a6fadf433.png",
-    "static/media/ralamandal.png": "/takniki_hindi_sangoshthi_2026/static/media/ralamandal.2225910dfc7e2ede36b3.png",
-    "static/media/Speaker.png": "/takniki_hindi_sangoshthi_2026/static/media/Speaker.6752cb5a769c9b6b8594.png",
-    "static/media/Lalbagh.png": "/takniki_hindi_sangoshthi_2026/static/media/Lalbagh.e80af0c42cac6dcae849.png",
-    "static/media/table.png": "/takniki_hindi_sangoshthi_2026/static/media/table.8c7b87a4df743b4bfb5d.png",
-    "static/media/jodhpurlogo.png": "/takniki_hindi_sangoshthi_2026/static/media/jodhpurlogo.56c17a690fdd3a164829.png",
-    "static/media/indorelogo.png": "/takniki_hindi_sangoshthi_2026/static/media/indorelogo.a22e021ddb8a7a57cd18.png",
-    "static/media/indorelogo_white.png": "/takniki_hindi_sangoshthi_2026/static/media/indorelogo_white.c6f7b3e24adee4f54b24.png",
-    "index.html": "/takniki_hindi_sangoshthi_2026/index.html",
-    "main.5e135e08.css.map": "/takniki_hindi_sangoshthi_2026/static/css/main.5e135e08.css.map",
-    "main.4b675ed7.js.map": "/takniki_hindi_sangoshthi_2026/static/js/main.4b675ed7.js.map",
-    "453.d7446e4a.chunk.js.map": "/takniki_hindi_sangoshthi_2026/static/js/453.d7446e4a.chunk.js.map"
+    "main.css": "/takniki_hindi_sangoshthi_2026_design/static/css/main.5e135e08.css",
+    "main.js": "/takniki_hindi_sangoshthi_2026_design/static/js/main.9debe696.js",
+    "static/js/453.d7446e4a.chunk.js": "/takniki_hindi_sangoshthi_2026_design/static/js/453.d7446e4a.chunk.js",
+    "static/media/backgroundimg.png": "/takniki_hindi_sangoshthi_2026_design/static/media/backgroundimg.289c06a79df82d9fe976.png",
+    "static/media/backgroundImgAbout.png": "/takniki_hindi_sangoshthi_2026_design/static/media/backgroundImgAbout.4ef638f996e39f843a1c.png",
+    "static/media/sarafa.png": "/takniki_hindi_sangoshthi_2026_design/static/media/sarafa.50a9807b814b076f632b.png",
+    "static/media/kanchmandir.png": "/takniki_hindi_sangoshthi_2026_design/static/media/kanchmandir.994cbef9ddc5a9e0361b.png",
+    "static/media/gulawat.png": "/takniki_hindi_sangoshthi_2026_design/static/media/gulawat.14c1ac370d1bccc85aed.png",
+    "static/media/Rajwada.png": "/takniki_hindi_sangoshthi_2026_design/static/media/Rajwada.e6154076945a6fadf433.png",
+    "static/media/ralamandal.png": "/takniki_hindi_sangoshthi_2026_design/static/media/ralamandal.2225910dfc7e2ede36b3.png",
+    "static/media/Speaker.png": "/takniki_hindi_sangoshthi_2026_design/static/media/Speaker.6752cb5a769c9b6b8594.png",
+    "static/media/Lalbagh.png": "/takniki_hindi_sangoshthi_2026_design/static/media/Lalbagh.e80af0c42cac6dcae849.png",
+    "static/media/table.png": "/takniki_hindi_sangoshthi_2026_design/static/media/table.8c7b87a4df743b4bfb5d.png",
+    "static/media/jodhpurlogo.png": "/takniki_hindi_sangoshthi_2026_design/static/media/jodhpurlogo.56c17a690fdd3a164829.png",
+    "static/media/indorelogo.png": "/takniki_hindi_sangoshthi_2026_design/static/media/indorelogo.a22e021ddb8a7a57cd18.png",
+    "static/media/indorelogo_white.png": "/takniki_hindi_sangoshthi_2026_design/static/media/indorelogo_white.c6f7b3e24adee4f54b24.png",
+    "index.html": "/takniki_hindi_sangoshthi_2026_design/index.html",
+    "main.5e135e08.css.map": "/takniki_hindi_sangoshthi_2026_design/static/css/main.5e135e08.css.map",
+    "main.9debe696.js.map": "/takniki_hindi_sangoshthi_2026_design/static/js/main.9debe696.js.map",
+    "453.d7446e4a.chunk.js.map": "/takniki_hindi_sangoshthi_2026_design/static/js/453.d7446e4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e135e08.css",
-    "static/js/main.4b675ed7.js"
+    "static/js/main.9debe696.js"
   ]
 }
