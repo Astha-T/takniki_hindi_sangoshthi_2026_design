@@ -81,7 +81,7 @@ const Publication = () => {
                 sx={{
                   borderRadius: '50%',
                   color: '#522B29',
-                  backgroundColor: '#F9DAD0', // ✅ More contrast
+                  backgroundColor: '#fff', // ✅ More contrast
                   p: 1,
                   ml: 1.5,
                   fontSize: '2rem', // ✅ Bigger icon
@@ -91,7 +91,7 @@ const Publication = () => {
               />
             }
             sx={{
-              color: '#F9DAD0', // ✅ text color matches background contrast
+              color: '#fff', // ✅ text color matches background contrast
               backgroundColor: '#522B29',
               fontSize: '1.75rem',
               fontWeight: 'bold',

@@ -41,7 +41,7 @@ const Navbar = () => {
           sx={{
             backgroundColor: theme.palette.success.main,
             height: "8.5rem",
-            width: { xs: "100%", md: "65%" },
+            width: { xs: "100%", sm:"70%", md: "65%" },
             borderBottomLeftRadius: { xs: "7.75rem", md: "7.75rem" }, // ✅ curve in mobile too
             boxShadow: "none",
             display: "flex",
