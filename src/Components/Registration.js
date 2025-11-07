@@ -163,7 +163,7 @@ const Registration = () => {
           }}
         >
           तकनीकी हिन्दी संगोष्ठी 2024 से संबंधित मुख्य तिथियां-
-          <ul style={{ paddingLeft: 4.5 }}>
+          <ul style={{ paddingLeft: "2%" }}>
             <li>
               आलेख अपलोड करने की समय सीमा - 31 अक्टूबर 2024    10 नवंबर 2024 तक
               (संशोधित दिनांक)
@@ -354,11 +354,11 @@ const Registration = () => {
               lg: "1.5rem",
             },
             px: { xs: 2, sm: 3, md: 4 },
-            mt: { xs: 1, sm: 1.5, md: 2 },
+            my: { xs: 1, sm: 1.5, md: 2 },
             lineHeight: { xs: "1.75rem", sm: "1.75rem", md: "1.5rem" },
           }}
         >
-          <ol style={{ paddingLeft: { xs: 2, sm: 3, md: 4 } }}>
+          <ol style={{ paddingLeft: "2%" }}>
             <li>
               यदि आपका आलेख अंतरिम के रूप में चुन लिया गया है, जिसकी सूचना आपको
               ईमेल द्वारा प्रदान कर दी गई है तो आपसे अनुरोध है कि आप 
@@ -403,10 +403,9 @@ const Registration = () => {
             },
             px: { xs: 2, sm: 3, md: 4 },
             mt: { xs: 1, sm: 1.5, md: 2 },
-            lineHeight: { xs: "1.75rem", sm: "1.75rem", md: "1.5rem" },
           }}
         >
-          <ol style={{ paddingLeft: { xs: 2, sm: 3, md: 4 } }}>
+          <ol style={{ paddingLeft: "2%" }}>
             <li>
               प्रतिभागियों को अपने आवागमन हेतु रेल/बस/हवाई जहाज के किराये की
               व्यवस्था स्वयं करनी होगी । संस्थान एवं आयोजन समिति द्वारा संस्थान
@@ -445,9 +444,7 @@ const Registration = () => {
             </li>
             <li>
               प्रतिभागी निम्नलिखित खाते में भुगतान कर सकता है:
-              <Box
-                sx={{ display: "flex", flexDirection: "column", mt: 1, ml: 2 }}
-              >
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography
                   sx={{
                     fontSize: {
@@ -456,56 +453,17 @@ const Registration = () => {
                       md: "1.25rem",
                       lg: "1.5rem",
                     },
+                    lineHeight: 1.5,
                   }}
                 >
                   <b>खाता संख्या -</b> 38448045180
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: {
-                      xs: "1.25rem",
-                      sm: "1.25rem",
-                      md: "1.25rem",
-                      lg: "1.5rem",
-                    },
-                  }}
-                >
+                  <br />
                   <b>नाम -</b> IIT Jodhpur Hostel Receipts and Fine Accounts
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: {
-                      xs: "1.25rem",
-                      sm: "1.25rem",
-                      md: "1.25rem",
-                      lg: "1.5rem",
-                    },
-                  }}
-                >
+                  <br />
                   <b>बैंक -</b> SBI IIT Jodhpur
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: {
-                      xs: "1.25rem",
-                      sm: "1.25rem",
-                      md: "1.25rem",
-                      lg: "1.5rem",
-                    },
-                  }}
-                >
+                  <br />
                   <b>IFSC Code -</b> SBIN0014892
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: {
-                      xs: "1.25rem",
-                      sm: "1.25rem",
-                      md: "1.25rem",
-                      lg: "1.5rem",
-                    },
-                  }}
-                >
+                  <br />
                   <b>UPI ID -</b> 38448045180@sbi
                 </Typography>
               </Box>
