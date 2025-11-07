@@ -46,7 +46,7 @@ const Amantrit_vakta = () => {
               key={i}
               sx={{
                 display: "flex",
-                gap: 10, // spacing between image and text
+                gap: { xs: 2, sm: 3, md: 5, lg: 5 }, // spacing between image and text
                 flexDirection: { xs: "column", md: "row" }, // stack on small screens
               }}
             >
@@ -54,8 +54,8 @@ const Amantrit_vakta = () => {
               <Box
                 sx={{
                   position: "relative",
-                  width: "23rem",
-                  height: "29.5rem",
+                  width: { xs: "20rem", sm: "21rem", md: "22rem", lg: "23rem" },
+                  height: "fir-content",
                   borderRadius: "12px",
                   overflow: "visible", // allow borders to extend outside
                   "&::before": {
@@ -101,7 +101,12 @@ const Amantrit_vakta = () => {
                   sx={{
                     fontWeight: "bold",
                     color: theme.palette.primary.main,
-                    fontSize: "2.5rem",
+                    fontSize: {
+                      xs: "2rem",
+                      sm: "2rem",
+                      md: "2.25rem",
+                      lg: "2.5rem",
+                    },
                   }}
                 >
                   श्री अनिल जोशी
@@ -109,17 +114,17 @@ const Amantrit_vakta = () => {
 
                 <Typography
                   sx={{
-                    mt: 3,
+                    mt: 2,
                     lineHeight: 1.5,
-                    fontSize: "1.25rem",
+                    fontSize: {
+                      md: "1rem",
+                      lg: "1.25rem",
+                    },
                   }}
                 >
-                  पूर्व उपाध्यक्ष, केंद्रीय हिंदी संस्थान, भारत सरकार
-                  <br />
-                  एवं <br />
-                  अध्यक्ष, वैश्विक हिंदी परिवार
-                  <br />
-                  कवि - लेखक, पूर्व राजनयिक
+                  पूर्व उपाध्यक्ष, केंद्रीय हिंदी संस्थान, <br />
+                  भारत सरकार एवं अध्यक्ष,
+                  <br /> वैश्विक हिंदी परिवार कवि - लेखक, पूर्व राजनयिक
                 </Typography>
               </Box>
             </Grid>
@@ -163,7 +168,7 @@ const Amantrit_vakta = () => {
                 sx={{
                   position: "relative",
                   width: "14.7rem",
-                  height: "19rem",
+                  height: "fit-content",
                   borderRadius: "12px",
                   overflow: "visible", // allow borders to extend outside
                   "&::before": {

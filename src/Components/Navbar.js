@@ -38,9 +38,9 @@ const Navbar = () => {
         position="static"
         sx={{
           backgroundColor: theme.palette.success.main,
-          height: "8.5rem",
+          height: "6.5rem", // ↓ scaled down from 8.5rem
           width: { xs: "100%", md: "80%", sm: "60%", lg: "65%" },
-          borderBottomLeftRadius: { xs: "7.75rem", md: "7.75rem" }, // ✅ curve in mobile too
+          borderBottomLeftRadius: { xs: "6rem", md: "6rem" },
           boxShadow: "none",
           display: "flex",
           justifyContent: "center",
@@ -56,9 +56,9 @@ const Navbar = () => {
             },
             alignItems: "center",
             height: "100%",
-            px: 3,
-            pt: 4,
-            pb: 2,
+            px: 2,
+            pt: 2,
+            pb: 1,
             width: "100%",
           }}
         >
@@ -76,9 +76,9 @@ const Navbar = () => {
             sx={{
               display: { xs: "none", md: "flex" },
               alignItems: "center",
-              justifyContent: "space-evenly", // Equal spacing
-              width: "100%", // Take full width
-              mt: 3,
+              justifyContent: "space-evenly",
+              width: "100%",
+              mt: 2,
             }}
           >
             {navItems.map((item) => (
@@ -88,12 +88,7 @@ const Navbar = () => {
                 to={item.path}
                 color="inherit"
                 sx={{
-                  fontSize: {
-                    xs: "1.375rem",
-                    sm: "1.375rem",
-                    md: "1rem",
-                    lg: "1.375rem",
-                  },
+                  fontSize: { md: "1rem", lg: "1.25rem" },
                   color: location.pathname === item.path ? "#5F695C" : "#fff",
                   fontWeight:
                     location.pathname === item.path ? "bold" : "normal",
@@ -103,7 +98,7 @@ const Navbar = () => {
               </Button>
             ))}
             <IconButton color="inherit">
-              <SearchIcon sx={{ fontSize: 26, color: "#fff" }} />
+              <SearchIcon sx={{ fontSize: 22, color: "#fff" }} />
             </IconButton>
           </Box>
         </Toolbar>
@@ -116,15 +111,15 @@ const Navbar = () => {
         onClose={handleDrawerToggle}
         PaperProps={{
           sx: {
-            backgroundColor: theme.palette.success.main, // ✅ same green background
-            color: "#fff", // ✅ white text
+            backgroundColor: theme.palette.success.main,
+            color: "#fff",
             width: "65%",
-            borderTopRightRadius: "2rem", // optional curve
+            borderTopRightRadius: "2rem",
             borderBottomRightRadius: "2rem",
           },
         }}
       >
-        <Box sx={{ height: "100%", pt: 3 }}>
+        <Box sx={{ height: "100%", pt: 2 }}>
           <List>
             {navItems.map((item) => (
               <ListItem
@@ -144,7 +139,7 @@ const Navbar = () => {
                   primary={
                     <Typography
                       sx={{
-                        fontSize: "1.2rem",
+                        fontSize: "1rem", // ↓ scaled
                         fontWeight:
                           location.pathname === item.path ? "bold" : "normal",
                       }}

@@ -214,9 +214,9 @@ const Home = () => {
           sx={{
             color: "#fff",
             backgroundColor: "#522B29",
-            width: { xs: "70%", md: "25%" },
-            height: { xs: "5rem", md: "10rem" },
-            fontSize: { xs: "1,5rem", md: "2.5rem" }, // ✅ readable
+            width: { xs: "70%", sm: "40%", md: "35%", lg: "30%" },
+            height: { xs: "5rem", md: "7rem" },
+            fontSize: { xs: "1.5rem", md: "2rem", lg: "2.25rem" }, // ✅ readable
             fontWeight: "bolder",
             borderRadius: "80px",
             "&:hover": {

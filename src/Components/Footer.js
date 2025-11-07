@@ -7,42 +7,40 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        display: { xs: "block", md: "flex" }, // ✅ block on mobile, flex on desktop
+        display: { xs: "block", md: "flex" },
         alignItems: { md: "center" },
         justifyContent: { md: "space-between" },
         textAlign: { xs: "center", md: "left" },
         width: "100%",
         background: theme.palette.primary.main,
-        py: { xs: 5, md: 7 },
-        px: { xs: 4, md: 15 },
+        py: { xs: 3, md: 5 },
+        px: { xs: 3, md: 10 },
         boxSizing: "border-box",
       }}
     >
-      {/* Left Section: Logo */}
       <Box
         sx={{
           display: "flex",
           justifyContent: { xs: "center", md: "flex-start" },
-          mb: { xs: 3, md: 0 }, // spacing between logo and text on mobile
+          mb: { xs: 2, md: 0 },
         }}
       >
         <img
           src={indorelogo_white}
           alt="IIT Indore Logo"
           style={{
-            height: "120px",
+            height: "110px", // ↓ scaled from 120px
             objectFit: "contain",
           }}
         />
       </Box>
 
-      {/* Right Section: Address */}
       <Box>
         <Typography
           sx={{
             color: "#fff",
             fontWeight: "bold",
-            fontSize: "1.25rem",
+            fontSize: { md: "1rem", lg: "1.25rem" },
             lineHeight: 1.3,
           }}
         >
@@ -58,8 +56,8 @@ const Footer = () => {
             color: "#fff",
             fontWeight: "bold",
             lineHeight: 1.3,
-            fontSize: "1.25rem",
-            mt: 3,
+            fontSize: { md: "1rem", lg: "1.25rem" },
+            mt: 2,
           }}
         >
           भारतीय प्रौद्योगिकी संस्थान इंदौर <br />

@@ -6,23 +6,23 @@ const Logo = () => {
   return (
     <Box
       sx={{
-        width: { xs: "50%", sm: "30%", md: "20%", lg: "15%" }, // ✅ responsive width
+        width: { xs: "50%", sm: "30%", md: "18%", lg: "12%" },
         height: "fit-content",
         backgroundColor: "#fff",
-        borderBottomRightRadius: "9rem",
+        borderBottomRightRadius: "7rem", // ↓ smaller
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <Box sx={{ mt: 5, mb: 2 }}>
+      <Box sx={{ mt: 3, mb: 1 }}>
         {["2 तकनीकी", "0 हिंदी", "2 संगोष्ठी", "6"].map((text, index) => (
           <Typography
             key={index}
             sx={{
               color: "#1360AB",
               fontWeight: 700,
-              fontSize: "1.25rem",
+              fontSize: { md: "1rem", lg: "1.25rem" },
               lineHeight: 1,
               my: 0,
             }}
@@ -34,7 +34,7 @@ const Logo = () => {
                   component="span"
                   sx={{
                     fontWeight: 800,
-                    fontSize: "1.5rem",
+                    fontSize: { md: "1.25rem", lg: "1.5rem" },
                   }}
                 >
                   {char}
