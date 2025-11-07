@@ -41,7 +41,7 @@ const Navbar = () => {
           sx={{
             backgroundColor: theme.palette.success.main,
             height: "8.5rem",
-            width: { xs: "100%", sm:"70%", md: "65%" },
+            width: { xs: "100%", md:"80%", sm:"60%", lg: "65%" },
             borderBottomLeftRadius: { xs: "7.75rem", md: "7.75rem" }, // ✅ curve in mobile too
             boxShadow: "none",
             display: "flex",
@@ -51,7 +51,7 @@ const Navbar = () => {
           <Toolbar
             sx={{
               display: "flex",
-              justifyContent: { xs: "space-between", md: "center" },
+              justifyContent: { xs: "space-between", lg:"center", md: "center" },
               alignItems: "center",
               height: "100%",
               px: 3,
@@ -86,7 +86,7 @@ const Navbar = () => {
                   to={item.path}
                   color="inherit"
                   sx={{
-                    fontSize: "1.375rem",
+                    fontSize:{xs:'1.375rem', sm:'1.375rem', md:'1rem', lg:'1.375rem'},
                     color: location.pathname === item.path ? "#5F695C" : "#fff",
                     fontWeight:
                       location.pathname === item.path ? "bold" : "normal",

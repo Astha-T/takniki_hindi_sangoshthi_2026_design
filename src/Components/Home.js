@@ -46,44 +46,73 @@ const Home = () => {
 
 
       <Box
+  sx={{
+    width: "100%",
+    backgroundColor: "#fff",
+    py: { xs: 5, md: 10 },
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  }}
+>
+  <Box sx={{ width: { xs: "90%", md: "80%" }, mb: 4 }}>
+    <Typography
+      variant="h5"
+      sx={{
+        color: theme.palette.primary.main,
+        fontWeight: "bolder",
+        textAlign: "left",
+        mb: 4,
+      }}
+    >
+      संगोष्ठी का विवरण
+    </Typography>
+
+    {/* ✅ Correct responsive layout */}
+    <Box
+      sx={{
+        display: { xs: "block", sm: "block", md: "flex" },
+        flexDirection: { xs: "column", sm: "column", md: "row" },
+        justifyContent: { md: "space-evenly" },
+        alignItems: "flex-start",
+        gap: { xs: 3, sm: 3, md: 6 },
+      }}
+    >
+      <Typography
+        variant="h6"
         sx={{
-          width: "100%",
-          backgroundColor: "#fff",
-          py: { xs: 5, md: 10 },
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          textAlign: "justify",
+          color: "#000",
+          pb: {xs: 1, sm: 2, md:0, xl: 0},
+          pr: { md: 3, lg: 5 },
         }}
       >
-        <Box sx={{ width: { xs: "90%", md: "80%" }, mb: 4 }}>
-          <Typography
-            variant="h5"
-            sx={{
-              color: theme.palette.primary.main,
-              fontWeight: "bolder",
-              textAlign: "left",
-              mb: 4,
-            }}
-          >
-            संगोष्ठी का विवरण
-          </Typography>
-         <Box sx={{display:'flex', justifyContent:'space-evenly'}}>
-  
-              <Typography variant="h6" sx={{ textAlign: "justify", color: "#000", pr: 5 }}>
-                भारतीय प्रौद्योगिकी संस्थान इंदौर द्वारा गत वर्ष की भांति इस वर्ष भी तकनीकी
-                हिंदी संगोष्ठी का आयोजन 02 जनवरी 2026 को किया जा रहा है। संगोष्ठी का मुख्य उद्देश्य
-                वैज्ञानिक एवं प्रौद्योगिकी संस्थानों में हो रहे तकनीकी नवाचारों को हिंदी भाषा में
-                सरल एवं रुचिकर पाठ्य के माध्यम से छात्रों एवं शोधार्थियों के लिए उपलब्ध कराया जाना है।
-              </Typography>
-  
-              <Typography variant="h6" sx={{ textAlign: "justify", color: "#000", pl: 5 }}>
-                जिससे तकनीकी क्षेत्र में हिंदी भाषा के प्रयोग का दायरा विस्तृत किया जा सके।
-                इस वर्ष की तकनीकी हिंदी संगोष्ठी का संयुक्त आयोजन भारतीय प्रौद्योगिकी संस्थान
-                इंदौर और भारतीय प्रौद्योगिकी संस्थान जोधपुर द्वारा किया जा रहा है।
-              </Typography>
-      </Box>
-        </Box>
-      </Box>
+        भारतीय प्रौद्योगिकी संस्थान इंदौर द्वारा गत वर्ष की भांति इस वर्ष भी
+        तकनीकी हिंदी संगोष्ठी का आयोजन 02 जनवरी 2026 को किया जा रहा है।
+        संगोष्ठी का मुख्य उद्देश्य वैज्ञानिक एवं प्रौद्योगिकी संस्थानों में हो
+        रहे तकनीकी नवाचारों को हिंदी भाषा में सरल एवं रुचिकर पाठ्य के माध्यम से
+        छात्रों एवं शोधार्थियों के लिए उपलब्ध कराया जाना है।
+      </Typography>
+
+      <Typography
+        variant="h6"
+        sx={{
+          textAlign: "justify",
+          color: "#000",
+          pl: { md: 3, lg: 5 },
+          pt: {xs: 1, sm: 2, md:0, xl: 0},
+
+        }}
+      >
+        जिससे तकनीकी क्षेत्र में हिंदी भाषा के प्रयोग का दायरा विस्तृत किया जा
+        सके। इस वर्ष की तकनीकी हिंदी संगोष्ठी का संयुक्त आयोजन भारतीय
+        प्रौद्योगिकी संस्थान इंदौर और भारतीय प्रौद्योगिकी संस्थान जोधपुर द्वारा
+        किया जा रहा है।
+      </Typography>
+    </Box>
+  </Box>
+</Box>
+
 
       {/* ---------- Green background image section ---------- */}
       <Box
@@ -102,7 +131,7 @@ const Home = () => {
         {/* ✅ Centered green box */}
         <Box
           sx={{
-            width: { xs: "85%", md: "30%" },
+            width: { xs: "85%", sm:"60%", md: "50%" , xl:"30%"},
             backgroundColor: theme.palette.success.main,
             borderRadius: "16px",
             display: "flex",

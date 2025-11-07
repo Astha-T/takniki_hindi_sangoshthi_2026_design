@@ -4,142 +4,25 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Speaker from '../Assets/images/Speaker.png';
 import indorelogo from '../Assets/images/indorelogo.png';
 import jodhpurlogo from '../Assets/images/jodhpurlogo.png';
+import CentralizedBox from './CentralizedBox';
 
 const Amantrit_vakta = () => {
   const theme = useTheme();
   return (
     <ThemeProvider theme={theme}>
-        <Box sx={{mx: {xs: 1, md:10}}}>
+        <CentralizedBox>
             <Typography variant='h3' color="#5F695C" sx={{mt: 10, fontWeight:'bold'}}>आमंत्रित वक्ता</Typography>
-{/* <Box
-  sx={{
-    width: "100%",
-    background: "#fff",
-    py: { xs: 5, md: 10 },
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  }}
->
-  <Box sx={{ width: "80%", mb: 4 }}>
-    <Typography
-      variant="h4"
-      sx={{
-        color: theme.palette.primary.main,
-        fontWeight: "bolder",
-        textAlign: "left",
-        mb: 4,
-      }}
-    >
-      संगोष्ठी का विवरण
-    </Typography>
 
-    <Grid container spacing={2}>
-      <Grid item xs={12} md={6}>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
-          भारतीय प्रौद्योगिकी संस्थान इंदौर द्वारा गत वर्ष की भांति इस वर्ष भी तकनीकी हिंदी संगोष्ठी का आयोजन 02 जनवरी
-          2026 को किया जा रहा है। संगोष्ठी का मुख्य उद्देश्य वैज्ञानिक एवं प्रौद्योगिकी संस्थानों में हो रहे
-          तकनीकी नवाचारों को हिंदी भाषा में सरल एवं रुचिकर पाठ्य के माध्यम से छात्रों एवं शोधार्थियों के लिए
-          उपलब्ध कराया जाना है।
-        </Typography>
-      </Grid>
-      <Grid item xs={12} md={6}>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
-          जिससे तकनीकी क्षेत्र में हिंदी भाषा के प्रयोग का दायरा विस्तृत किया जा सके। इस वर्ष की तकनीकी हिंदी
-          संगोष्ठी का संयुक्त आयोजन भारतीय प्रौद्योगिकी संस्थान इंदौर और भारतीय प्रौद्योगिकी संस्थान जोधपुर द्वारा
-          किया जा रहा है।
-        </Typography>
-      </Grid>
-    </Grid>
-  </Box>
-</Box>
-      <Box
-        sx={{
-          width: '100%',
-          py: 8,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundImage: `url(${backgroundimg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        <Box
-          sx={{
-            width: { xs: '80%', md: '35%' },
-            backgroundColor: theme.palette.success.main,
-            borderRadius: '12px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            py: 4,
-            gap: 2,
-          }}
-        >
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 4 }}>
-            <img src={indorelogo} alt="IIT Indore Logo" style={{ height: '144px', objectFit: 'contain' }} />
 
-            <Typography variant="h5" color="#fff" sx={{ fontWeight: 'bold' }}>
-              एवं
-            </Typography>
-
-            <img src={jodhpurlogo} alt="IIT Jodhpur Logo" style={{ height: '144px', objectFit: 'contain' }} />
-          </Box>
-
-          <Typography variant="h4" color="#fff" sx={{ fontWeight: 'bold', textAlign: 'center', mt: 2 }}>
-            द्वारा संयुक्त आयोजन
-          </Typography>
-          <Typography variant="h6" color="#fff" sx={{ fontWeight: 'bold', textAlign: 'center', mt: 5 }}>
-            2 जनवरी 2026 | स्थान - भारतीय प्रौद्योगिकी संस्थान इंदौर
-          </Typography>
-        </Box>
-      </Box>
-
-      <Box
+           {/* Divider Below Image Section */}
+      <Divider sx={{ my: 2, borderColor: '#F9DAD0', borderWidth: 2, width: '100%', mx: 'auto' }} />
+</CentralizedBox>
+      {/* Committee Section */}
+      <CentralizedBox
         sx={{
           width: '100%',
           background: '#fff',
           my: 10,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
-        <Button
-  variant="contained"
-  sx={{
-    color: "#fff",
-    backgroundColor: "#522B29",
-    width: { xs: "60%", md: "20%" },
-    height: "90px",
-    fontSize: { xs: "22px", md: "28px" },
-    fontWeight: "bolder",
-    borderTopLeftRadius: "80px",
-    borderBottomLeftRadius: "80px",
-    borderTopRightRadius: "80px",
-    borderBottomRightRadius: "80px",
-    "&:hover": {
-      backgroundColor: "#6d3c37",
-    },
-  }}
->
-  पंजीकरण करें
-</Button>
-
-      </Box> */}
-
-           {/* Divider Below Image Section */}
-      <Divider sx={{ my: 2, borderColor: '#F9DAD0', borderWidth: 2, width: '100%', mx: 'auto' }} />
-</Box>
-      {/* Committee Section */}
-      <Box
-        sx={{
-          width: '100%',
-          background: '#fff',
-          m: 10,
           display: 'flex',
           flexDirection: 'column',
         }}
@@ -240,32 +123,14 @@ const Amantrit_vakta = () => {
   ))}
 </Grid>
 
-      </Box>
+      </CentralizedBox>
 <Divider sx={{ my: 2, borderColor: '#F9DAD0', borderWidth: 2, width: '100%', mx: 'auto' }} />
-      {/* <Box sx={{width:"100%", mt:5, p:3, backgroundColor:theme.palette.success.main,
-          display: 'flex',
-          alignItems: 'center',
-      }}>
-<Grid
-  container
-  spacing={10}
-  justifyContent="center"
-  alignItems="center"
-  sx={{
-    width: '85%',
-    mx: 'auto', 
-  }}
->
-  <Grid item xs={12} md={6}>
-      <Typography variant='h5' sx={{textAlign:'center', color:theme.palette.primary.main, fontWeight:'bold'}}>आयोजक</Typography>
-  </Grid>
-  </Grid>
-      </Box> */}
-      <Box
+      
+      <CentralizedBox
         sx={{
           width: '100%',
           background: '#fff',
-          m: 10,
+          my: 10,
           display: 'flex',
           flexDirection: 'column',
         }}
@@ -366,7 +231,7 @@ const Amantrit_vakta = () => {
   ))}
 </Grid>
 
-      </Box>
+      </CentralizedBox>
     </ThemeProvider>
   );
 };
