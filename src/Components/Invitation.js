@@ -1,21 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Grid,
-  Button,
-  Divider,
-  useTheme,
-} from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Box, Typography, Button, Divider, useTheme } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CentralizedBox from "./CentralizedBox";
 
 const Invitation = () => {
   const theme = useTheme();
   return (
-    <ThemeProvider theme={theme}>
-      {/* ✅ All content wrapped in one parent Box */}
+    <Box>
       <Box>
         {/* Header Section */}
         <CentralizedBox>
@@ -724,20 +715,32 @@ const Invitation = () => {
           mb: 0,
         }}
       >
-          <Typography sx={{ fontWeight: "bolder", fontSize: "2rem", pt: 3, px:{xs: 2, sm: 4, md: 6, lg: 8}  }}>
-            नोट
-          </Typography>
-          <Divider
+        <Typography
+          sx={{
+            fontWeight: "bolder",
+            fontSize: "2rem",
+            pt: 3,
+            px: { xs: 2, sm: 4, md: 6, lg: 8 },
+          }}
+        >
+          नोट
+        </Typography>
+        <Divider
+          sx={{
+            my: 2,
+            borderColor: "#fff",
+            borderWidth: 2,
+            width: "100%",
+            mx: "auto",
+          }}
+        />
+        <Box sx={{ px: { xs: 5, sm: 7, md: 7, lg: 10 } }}>
+          <Typography
             sx={{
-              my: 2,
-              borderColor: "#fff",
-              borderWidth: 2,
-              width: "100%",
-              mx: "auto",
+              py: 3,
+              fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" },
             }}
-          />
-          <Box sx={{px:{xs: 5, sm: 7, md: 7, lg: 10}  }}>
-          <Typography sx={{ py: 3, fontSize: {xs:"1rem", sm:"1.25rem", md:"1.5rem"} }}>
+          >
             <ol>
               <li>
                 क्रम संख्या 1 से 15 तक शीर्षकों के अंतर्गत तकनीकी आलेख ही चयनित
@@ -758,7 +761,7 @@ const Invitation = () => {
           </Typography>
         </Box>
       </CentralizedBox>
-    </ThemeProvider>
+    </Box>
   );
 };
 

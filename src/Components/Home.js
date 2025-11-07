@@ -7,112 +7,106 @@ import {
   Button,
   Divider,
   useTheme,
-  ThemeProvider,
 } from "@mui/material";
 import backgroundimg from "../Assets/images/backgroundimg.png";
 import indorelogo from "../Assets/images/indorelogo.png";
 import jodhpurlogo from "../Assets/images/jodhpurlogo.png";
-import Hindi_confrenece_video from '../Assets/images/Hindi_confrenece_video.gif'
+import Hindi_confrenece_video from "../Assets/images/Hindi_confrenece_video.gif";
 
 const Home = () => {
-  const theme = useTheme();
   const navigate = useNavigate();
+  const theme = useTheme();
 
   return (
-    <ThemeProvider theme={theme}>
-   
-   <Box sx={{background:'#fff'}}>
+    <Box sx={{ background: "#fff" }}>
       <Box
-  sx={{
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#000", // optional fallback
-    py: 5,
-  }}
->
-  <img
-    src={Hindi_confrenece_video}
-    alt="Hindi Conference Video"
-    style={{
-      width: "100%",
-      maxWidth: "1500px",
-      borderRadius: "12px",
-      objectFit: "cover",
-    }}
-  />
-</Box>
-
-
-      <Box
-  sx={{
-    width: "100%",
-    backgroundColor: "#fff",
-    py: { xs: 5, md: 10 },
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  }}
->
-  <Box sx={{ width: { xs: "90%", md: "80%" }, mb: 4 }}>
-    <Typography
-      variant="h5"
-      sx={{
-        color: theme.palette.primary.main,
-        fontWeight: "bolder",
-        textAlign: "left",
-        mb: 4,
-      }}
-    >
-      संगोष्ठी का विवरण
-    </Typography>
-
-    {/* ✅ Correct responsive layout */}
-    <Box
-      sx={{
-        display: { xs: "block", sm: "block", md: "flex" },
-        flexDirection: { xs: "column", sm: "column", md: "row" },
-        justifyContent: { md: "space-evenly" },
-        alignItems: "flex-start",
-        gap: { xs: 3, sm: 3, md: 6 },
-      }}
-    >
-      <Typography
-        variant="h6"
         sx={{
-          textAlign: "justify",
-          color: "#000",
-          pb: {xs: 1, sm: 2, md:0, xl: 0},
-          pr: { md: 3, lg: 5 },
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#000", // optional fallback
+          py: 5,
         }}
       >
-        भारतीय प्रौद्योगिकी संस्थान इंदौर द्वारा गत वर्ष की भांति इस वर्ष भी
-        तकनीकी हिंदी संगोष्ठी का आयोजन 02 जनवरी 2026 को किया जा रहा है।
-        संगोष्ठी का मुख्य उद्देश्य वैज्ञानिक एवं प्रौद्योगिकी संस्थानों में हो
-        रहे तकनीकी नवाचारों को हिंदी भाषा में सरल एवं रुचिकर पाठ्य के माध्यम से
-        छात्रों एवं शोधार्थियों के लिए उपलब्ध कराया जाना है।
-      </Typography>
+        <img
+          src={Hindi_confrenece_video}
+          alt="Hindi Conference Video"
+          style={{
+            width: "100%",
+            maxWidth: "1500px",
+            borderRadius: "12px",
+            objectFit: "cover",
+          }}
+        />
+      </Box>
 
-      <Typography
-        variant="h6"
+      <Box
         sx={{
-          textAlign: "justify",
-          color: "#000",
-          pl: { md: 3, lg: 5 },
-          pt: {xs: 1, sm: 2, md:0, xl: 0},
-
+          width: "100%",
+          backgroundColor: "#fff",
+          py: { xs: 5, md: 10 },
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        जिससे तकनीकी क्षेत्र में हिंदी भाषा के प्रयोग का दायरा विस्तृत किया जा
-        सके। इस वर्ष की तकनीकी हिंदी संगोष्ठी का संयुक्त आयोजन भारतीय
-        प्रौद्योगिकी संस्थान इंदौर और भारतीय प्रौद्योगिकी संस्थान जोधपुर द्वारा
-        किया जा रहा है।
-      </Typography>
-    </Box>
-  </Box>
-</Box>
+        <Box sx={{ width: { xs: "90%", md: "80%" }, mb: 4 }}>
+          <Typography
+            variant="h5"
+            sx={{
+              color: theme.palette.primary.main,
+              fontWeight: "bolder",
+              textAlign: "left",
+              mb: 4,
+            }}
+          >
+            संगोष्ठी का विवरण
+          </Typography>
 
+          {/* ✅ Correct responsive layout */}
+          <Box
+            sx={{
+              display: { xs: "block", sm: "block", md: "flex" },
+              flexDirection: { xs: "column", sm: "column", md: "row" },
+              justifyContent: { md: "space-evenly" },
+              alignItems: "flex-start",
+              gap: { xs: 3, sm: 3, md: 6 },
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                textAlign: "justify",
+                color: "#000",
+                pb: { xs: 1, sm: 2, md: 0, xl: 0 },
+                pr: { md: 3, lg: 5 },
+              }}
+            >
+              भारतीय प्रौद्योगिकी संस्थान इंदौर द्वारा गत वर्ष की भांति इस वर्ष
+              भी तकनीकी हिंदी संगोष्ठी का आयोजन 02 जनवरी 2026 को किया जा रहा है।
+              संगोष्ठी का मुख्य उद्देश्य वैज्ञानिक एवं प्रौद्योगिकी संस्थानों
+              में हो रहे तकनीकी नवाचारों को हिंदी भाषा में सरल एवं रुचिकर पाठ्य
+              के माध्यम से छात्रों एवं शोधार्थियों के लिए उपलब्ध कराया जाना है।
+            </Typography>
+
+            <Typography
+              variant="h6"
+              sx={{
+                textAlign: "justify",
+                color: "#000",
+                pl: { md: 3, lg: 5 },
+                pt: { xs: 1, sm: 2, md: 0, xl: 0 },
+              }}
+            >
+              जिससे तकनीकी क्षेत्र में हिंदी भाषा के प्रयोग का दायरा विस्तृत
+              किया जा सके। इस वर्ष की तकनीकी हिंदी संगोष्ठी का संयुक्त आयोजन
+              भारतीय प्रौद्योगिकी संस्थान इंदौर और भारतीय प्रौद्योगिकी संस्थान
+              जोधपुर द्वारा किया जा रहा है।
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
 
       {/* ---------- Green background image section ---------- */}
       <Box
@@ -131,7 +125,7 @@ const Home = () => {
         {/* ✅ Centered green box */}
         <Box
           sx={{
-            width: { xs: "85%", sm:"60%", md: "50%" , xl:"30%"},
+            width: { xs: "85%", sm: "60%", md: "50%", xl: "30%" },
             backgroundColor: theme.palette.success.main,
             borderRadius: "16px",
             display: "flex",
@@ -145,43 +139,43 @@ const Home = () => {
           }}
         >
           <Box
-  sx={{
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: { xs: 2, md: 4 },
-    flexDirection: { xs: "column", md: "row" }, // ✅ vertical on mobile, horizontal on desktop
-    textAlign: "center",
-  }}
->
-  <img
-    src={indorelogo}
-    alt="IIT Indore Logo"
-    style={{
-      height: "9rem",
-      objectFit: "contain",
-    }}
-  />
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: { xs: 2, md: 4 },
+              flexDirection: { xs: "column", md: "row" }, // ✅ vertical on mobile, horizontal on desktop
+              textAlign: "center",
+            }}
+          >
+            <img
+              src={indorelogo}
+              alt="IIT Indore Logo"
+              style={{
+                height: "9rem",
+                objectFit: "contain",
+              }}
+            />
 
-  <Typography
-    color="#fff"
-    sx={{
-      fontWeight: "bold",
-      fontSize: { xs: "1.75rem", md: "2.25rem" }, // ✅ adjusts size for mobile
-    }}
-  >
-    एवं
-  </Typography>
+            <Typography
+              color="#fff"
+              sx={{
+                fontWeight: "bold",
+                fontSize: { xs: "1.75rem", md: "2.25rem" }, // ✅ adjusts size for mobile
+              }}
+            >
+              एवं
+            </Typography>
 
-  <img
-    src={jodhpurlogo}
-    alt="IIT Jodhpur Logo"
-    style={{
-      height: "9rem",
-      objectFit: "contain",
-    }}
-  />
-</Box>
+            <img
+              src={jodhpurlogo}
+              alt="IIT Jodhpur Logo"
+              style={{
+                height: "9rem",
+                objectFit: "contain",
+              }}
+            />
+          </Box>
 
           <Typography
             color="#fff"
@@ -216,7 +210,7 @@ const Home = () => {
       >
         <Button
           variant="contained"
-          onClick={()=>navigate("./register")}
+          onClick={() => navigate("./register")}
           sx={{
             color: "#fff",
             backgroundColor: "#522B29",
@@ -306,120 +300,121 @@ const Home = () => {
       </Box>
 
       {/* ---------- Green bottom section (center aligned) ---------- */}
-<Box
-  sx={{
-    width: "100%",
-    mt: 5,
-    px: { xs: 2, md: 5 },
-    py: { xs: 4, md: 8 },
-    backgroundColor: theme.palette.success.main,
-    display: "flex",
-    justifyContent: "center",
-  }}
->
-  <Grid
-    container
-    spacing={0}
-    alignItems="stretch"
-    justifyContent="center"
-    sx={{
-      width: "100%",
-      maxWidth: "1400px",
-      textAlign: "center",
-    }}
-  >
-    {[
-      { title: "आयोजक" },
-      { title: "सह-आयोजक" },
-      { title: "प्रलेख, सुप्रचालन एवं प्रलेख उप-समिति के सदस्य" },
-    ].map((item, index) => (
-      <Grid
-        item
-        xs={12}
-        md={4}
-        key={index}
+      <Box
         sx={{
-          borderRight: index !== 2 ? "2px solid #F9DAD0" : "none",
+          width: "100%",
+          mt: 5,
+          px: { xs: 2, md: 5 },
+          py: { xs: 4, md: 8 },
+          backgroundColor: theme.palette.success.main,
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          alignItems: "center",
-          px: { xs: 2, md: 4 },
+          justifyContent: "center",
         }}
       >
-        {/* Title */}
-        <Typography
-          variant="h5"
+        <Grid
+          container
+          spacing={0}
+          alignItems="stretch"
+          justifyContent="center"
           sx={{
-            color: theme.palette.primary.main,
-            fontWeight: "bold",
-            mb: 4,
-            lineHeight: 1.4,
-            textAlign: "center",
-            whiteSpace: "pre-line",
-          }}
-        >
-          {index === 2
-            ? "प्रलेख, सुप्रचालन एवं\nप्रलेख उप-समिति के सदस्य"
-            : item.title}
-        </Typography>
-
-        {/* ✅ This ensures all member lists start at same Y position */}
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: "flex",
-            alignItems: "flex-end",
-            justifyContent: "center",
             width: "100%",
-            pb: { xs: 3, md: 6 },
+            maxWidth: "1400px",
+            textAlign: "center",
           }}
         >
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-              gap: 4,
-            }}
-          >
-            <Typography
-              variant="body1"
+          {[
+            { title: "आयोजक" },
+            { title: "सह-आयोजक" },
+            { title: "प्रलेख, सुप्रचालन एवं प्रलेख उप-समिति के सदस्य" },
+          ].map((item, index) => (
+            <Grid
+              item
+              xs={12}
+              md={4}
+              key={index}
               sx={{
-                color: "#fff",
-                fontWeight: "bold",
-                lineHeight: 2,
-                textAlign: "center",
+                borderRight: index !== 2 ? "2px solid #F9DAD0" : "none",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "center",
+                px: { xs: 2, md: 4 },
               }}
             >
-              प्रो. श्री प्रकाश तिवारी<br />
-              प्रो. श्री प्रकाश तिवारी<br />
-              प्रो. श्री प्रकाश तिवारी
-            </Typography>
+              {/* Title */}
+              <Typography
+                variant="h5"
+                sx={{
+                  color: theme.palette.primary.main,
+                  fontWeight: "bold",
+                  mb: 4,
+                  lineHeight: 1.4,
+                  textAlign: "center",
+                  whiteSpace: "pre-line",
+                }}
+              >
+                {index === 2
+                  ? "प्रलेख, सुप्रचालन एवं\nप्रलेख उप-समिति के सदस्य"
+                  : item.title}
+              </Typography>
 
-            <Typography
-              variant="body1"
-              sx={{
-                color: "#fff",
-                fontWeight: "bold",
-                lineHeight: 2,
-                textAlign: "center",
-              }}
-            >
-              प्रो. श्री प्रकाश तिवारी<br />
-              प्रो. श्री प्रकाश तिवारी<br />
-              प्रो. श्री प्रकाश तिवारी
-            </Typography>
-          </Box>
-        </Box>
-      </Grid>
-    ))}
-  </Grid>
-</Box>
+              {/* ✅ This ensures all member lists start at same Y position */}
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  alignItems: "flex-end",
+                  justifyContent: "center",
+                  width: "100%",
+                  pb: { xs: 3, md: 6 },
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                    gap: 4,
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: "#fff",
+                      fontWeight: "bold",
+                      lineHeight: 2,
+                      textAlign: "center",
+                    }}
+                  >
+                    प्रो. श्री प्रकाश तिवारी
+                    <br />
+                    प्रो. श्री प्रकाश तिवारी
+                    <br />
+                    प्रो. श्री प्रकाश तिवारी
+                  </Typography>
 
-
-</Box>
-    </ThemeProvider>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: "#fff",
+                      fontWeight: "bold",
+                      lineHeight: 2,
+                      textAlign: "center",
+                    }}
+                  >
+                    प्रो. श्री प्रकाश तिवारी
+                    <br />
+                    प्रो. श्री प्रकाश तिवारी
+                    <br />
+                    प्रो. श्री प्रकाश तिवारी
+                  </Typography>
+                </Box>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </Box>
   );
 };
 

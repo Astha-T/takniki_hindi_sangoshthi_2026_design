@@ -7,14 +7,13 @@ import {
   Divider,
   useTheme,
 } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CentralizedBox from "./CentralizedBox";
 
 const Registration = () => {
   const theme = useTheme();
   return (
-    <ThemeProvider theme={theme}>
+    <Box>
       <CentralizedBox>
         <Typography
           variant="h3"
@@ -576,7 +575,7 @@ const Registration = () => {
           </Typography>
         </Box>
       </CentralizedBox>
-    </ThemeProvider>
+    </Box>
   );
 };
 

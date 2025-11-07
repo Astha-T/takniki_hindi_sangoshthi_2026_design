@@ -1,55 +1,52 @@
 import React from "react";
-import { Box, Typography, useTheme, ThemeProvider } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 const Logo = () => {
   const theme = useTheme();
-
   return (
-    <ThemeProvider theme={theme}>
-      <Box
-        sx={{
-          width: { xs: "50%", sm: "30%", md: "20%", lg: "15%" }, // ✅ responsive width
-          height: "fit-content",
-          backgroundColor: "#fff",
-          borderBottomRightRadius: "9rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Box sx={{ mt: 5, mb: 2 }}>
-          {["2 तकनीकी", "0 हिंदी", "2 संगोष्ठी", "6"].map((text, index) => (
-            <Typography
-              key={index}
-              sx={{
-                color: "#1360AB",
-                fontWeight: 700,
-                fontSize: "1.25rem",
-                lineHeight: 1,
-                my: 0,
-              }}
-            >
-              {text.split("").map((char, i) =>
-                /[0-9]/.test(char) ? (
-                  <Box
-                    key={i}
-                    component="span"
-                    sx={{
-                      fontWeight: 800,
-                      fontSize: "1.5rem",
-                    }}
-                  >
-                    {char}
-                  </Box>
-                ) : (
-                  char
-                )
-              )}
-            </Typography>
-          ))}
-        </Box>
+    <Box
+      sx={{
+        width: { xs: "50%", sm: "30%", md: "20%", lg: "15%" }, // ✅ responsive width
+        height: "fit-content",
+        backgroundColor: "#fff",
+        borderBottomRightRadius: "9rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Box sx={{ mt: 5, mb: 2 }}>
+        {["2 तकनीकी", "0 हिंदी", "2 संगोष्ठी", "6"].map((text, index) => (
+          <Typography
+            key={index}
+            sx={{
+              color: "#1360AB",
+              fontWeight: 700,
+              fontSize: "1.25rem",
+              lineHeight: 1,
+              my: 0,
+            }}
+          >
+            {text.split("").map((char, i) =>
+              /[0-9]/.test(char) ? (
+                <Box
+                  key={i}
+                  component="span"
+                  sx={{
+                    fontWeight: 800,
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {char}
+                </Box>
+              ) : (
+                char
+              )
+            )}
+          </Typography>
+        ))}
       </Box>
-    </ThemeProvider>
+    </Box>
   );
 };
 

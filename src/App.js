@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Logo from "./Components/Logo";
 import Footer from "./Components/Footer";
@@ -8,10 +13,10 @@ import Registration from "./Components/Registration";
 import Invitation from "./Components/Invitation";
 import About from "./Components/About";
 import Publication from "./Components/Publication";
-import { Box } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./Theme";
-import './App.css';
+import "./App.css";
 
 // 👇 Wrapper component to access location
 function AppContent() {
@@ -20,15 +25,14 @@ function AppContent() {
 
   return (
     <Box
-  sx={{
-    minHeight: "100vh",
-    overflowX: "hidden", // ✅ prevent child overflow
-    backgroundColor: isHome ? "black" : "white",
-    color: isHome ? "white" : "black",
-    transition: "background-color 0.5s ease, color 0.5s ease",
-  }}
->
-
+      sx={{
+        minHeight: "100vh",
+        overflowX: "hidden", // ✅ prevent child overflow
+        backgroundColor: isHome ? "black" : "white",
+        color: isHome ? "white" : "black",
+        transition: "background-color 0.5s ease, color 0.5s ease",
+      }}
+    >
       {/* Header Section */}
       <Box
         sx={{
@@ -61,6 +65,7 @@ function AppContent() {
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router basename="/takniki_hindi_sangoshthi_2026_design">
         <AppContent />
       </Router>
