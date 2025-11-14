@@ -12,15 +12,18 @@ const theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 768,
-      md: 1024,
+      sm: 750,
+      md: 1100,
       lg: 1400,
     },
   },
   typography: {
     fontFamily: "Hind, Arial, sans-serif",
     h3: { fontSize: "4rem", fontWeight: "bold" },
-    h5: { fontSize: "2rem", fontWeight: 600 },
+    h5: {
+      fontSize: { xs: "1.5rem", sm: "2rem", md: "2.25rem" },
+      fontWeight: 600,
+    },
     h6: { fontSize: "1.375rem" },
     body1: { fontSize: "1.125rem", lineHeight: 1.8 },
     body2: { fontSize: "24px" },
