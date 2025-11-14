@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/takniki_hindi_sangoshthi_2026_design/static/css/main.47fff6d0.css",
-    "main.js": "/takniki_hindi_sangoshthi_2026_design/static/js/main.4d84343a.js",
-    "static/js/453.d7446e4a.chunk.js": "/takniki_hindi_sangoshthi_2026_design/static/js/453.d7446e4a.chunk.js",
-    "static/media/backgroundImage.png": "/takniki_hindi_sangoshthi_2026_design/static/media/backgroundImage.c927bc3c1e48f7ce7263.png",
-    "static/media/aboutImg.png": "/takniki_hindi_sangoshthi_2026_design/static/media/aboutImg.e5fe0b4ba923fbb0c9a8.png",
-    "static/media/sangoshthi_ke_niyam.pdf": "/takniki_hindi_sangoshthi_2026_design/static/media/sangoshthi_ke_niyam.47fa482a1b2ae73a468e.pdf",
-    "static/media/CombinedImage.png": "/takniki_hindi_sangoshthi_2026_design/static/media/CombinedImage.76c9a70c9a05b840e331.png",
-    "static/media/croppediitjlogo.png": "/takniki_hindi_sangoshthi_2026_design/static/media/croppediitjlogo.30e99367909b18dab225.png",
-    "static/media/iitilogo.png": "/takniki_hindi_sangoshthi_2026_design/static/media/iitilogo.4b069ccf9567a196c8ab.png",
-    "static/media/nisprlogo.png": "/takniki_hindi_sangoshthi_2026_design/static/media/nisprlogo.4f2a1021ffd7127c5fd5.png",
-    "static/media/croppedcsirlogo.png": "/takniki_hindi_sangoshthi_2026_design/static/media/croppedcsirlogo.7fb2be1e7ff8d97d22a4.png",
-    "static/media/iitilogowhite.png": "/takniki_hindi_sangoshthi_2026_design/static/media/iitilogowhite.4d22fa8a3618f1b5b1f9.png",
-    "index.html": "/takniki_hindi_sangoshthi_2026_design/index.html",
-    "main.47fff6d0.css.map": "/takniki_hindi_sangoshthi_2026_design/static/css/main.47fff6d0.css.map",
-    "main.4d84343a.js.map": "/takniki_hindi_sangoshthi_2026_design/static/js/main.4d84343a.js.map",
-    "453.d7446e4a.chunk.js.map": "/takniki_hindi_sangoshthi_2026_design/static/js/453.d7446e4a.chunk.js.map"
+    "main.css": "/static/css/main.47fff6d0.css",
+    "main.js": "/static/js/main.52049567.js",
+    "static/js/453.d7446e4a.chunk.js": "/static/js/453.d7446e4a.chunk.js",
+    "static/media/backgroundImage.png": "/static/media/backgroundImage.c927bc3c1e48f7ce7263.png",
+    "static/media/aboutImg.png": "/static/media/aboutImg.e5fe0b4ba923fbb0c9a8.png",
+    "static/media/sangoshthi_ke_niyam.pdf": "/static/media/sangoshthi_ke_niyam.47fa482a1b2ae73a468e.pdf",
+    "static/media/CombinedImage.png": "/static/media/CombinedImage.76c9a70c9a05b840e331.png",
+    "static/media/croppediitjlogo.png": "/static/media/croppediitjlogo.30e99367909b18dab225.png",
+    "static/media/iitilogo.png": "/static/media/iitilogo.4b069ccf9567a196c8ab.png",
+    "static/media/nisprlogo.png": "/static/media/nisprlogo.4f2a1021ffd7127c5fd5.png",
+    "static/media/croppedcsirlogo.png": "/static/media/croppedcsirlogo.7fb2be1e7ff8d97d22a4.png",
+    "static/media/iitilogowhite.png": "/static/media/iitilogowhite.4d22fa8a3618f1b5b1f9.png",
+    "index.html": "/index.html",
+    "main.47fff6d0.css.map": "/static/css/main.47fff6d0.css.map",
+    "main.52049567.js.map": "/static/js/main.52049567.js.map",
+    "453.d7446e4a.chunk.js.map": "/static/js/453.d7446e4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47fff6d0.css",
-    "static/js/main.4d84343a.js"
+    "static/js/main.52049567.js"
   ]
 }
